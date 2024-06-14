@@ -480,6 +480,7 @@ footer {
   }
 
   form {
+    width: 80%;
     padding: 20px;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
@@ -543,7 +544,7 @@ footer {
   .footer-center,
   .footer-right {
     margin: 10px 0;
-    width: 100%; /* Make each section take full width */
+    width: 50%; /* Make each section take full width */
   }
 
   .footer-left h3 {
