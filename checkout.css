@@ -517,7 +517,49 @@ footer {
     margin-top: 10px;
   }
 
+  .apple-pay {
+    width: 50%;
+    margin: auto;
+  }
+
+  .checkout-right p {
+    margin-left: 120px;
+  }
   .pay-button:hover {
     background-color: #4cae4c;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .footer-links span {
+    display: none;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin: 10px 0;
+    width: 100%; /* Make each section take full width */
+  }
+
+  .footer-left h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px 0; /* Stack links vertically */
+  }
+
+  .footer-center div {
+    margin-bottom: 15px; /* Increase space between items for readability */
+  }
+
+  .footer-right {
+    margin-left: 0;
   }
 }
