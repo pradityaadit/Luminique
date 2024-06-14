@@ -1,0 +1,522 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.search-cart-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 60px;
+}
+
+.fa-user-circle,
+.fa-shopping-cart {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 19px; /* Adjusted to match icon sizes */
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 5px 30px 5px 10px; /* Add padding-right for the icon */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 5px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 17px; /* Adjust this value to make the icon smaller */
+}
+
+.content {
+  padding-top: 70px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Checkout */
+main {
+  flex: 1;
+}
+.checkout-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 100px auto; /* Menengahkan horizontal dan menambahkan margin atas */
+  width: 50%; /* Atur lebar container */
+}
+
+.checkout-left,
+.checkout-right {
+  padding: 20px;
+}
+
+.checkout-left {
+  width: 70%;
+  border-right: 1px solid #e0e0e0;
+}
+
+.checkout-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.item {
+  display: flex;
+  margin-top: 20px;
+}
+
+.item img {
+  width: 200px; /* Reduced image size */
+  height: 200px; /* Reduced image size */
+  margin-right: 10px;
+}
+
+.item-details p {
+  margin: 0;
+  color: #555;
+}
+
+.summary {
+  margin-top: 20px;
+}
+
+.summary p,
+.summary h3 {
+  margin: 0;
+  color: #555;
+  margin-top: 20px;
+}
+
+.apple-pay {
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.apple-pay:hover {
+  background-color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+select {
+  height: 45px; /* Adjust the height to match the input fields */
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.pay-button {
+  background-color: #5cb85c;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #4cae4c;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left {
+  margin-right: 20px;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-company-name {
+  margin-top: 10px;
+}
+
+.footer-center i {
+  margin-right: 10px;
+}
+
+.footer-center div {
+  margin-bottom: 10px;
+}
+
+.footer-right {
+  margin-left: 20px;
+}
+
+.gmail a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-company-about {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #555;
+  border-radius: 50%;
+  margin-right: 5px;
+  color: white;
+}
+
+.footer-icons a:hover {
+  background-color: #d6a78b;
+}
+/*media query*/
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Adjust top position based on your navbar height */
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    margin-left: 20px;
+    text-align: left; /* Align text to the left */
+  }
+
+  .search-cart-profile {
+    display: flex;
+    margin-right: auto;
+    margin-left: 20px;
+    align-items: center; /* Align items vertically */
+  }
+
+  .search-cart-profile input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100px; /* Adjust width as needed */
+  }
+
+  .search-cart-profile i {
+    font-size: 20px; /* Adjust icon size */
+  }
+
+  .hamburger-menu {
+    display: block;
+    color: #333;
+    margin-right: 40px; /* Adjust margin as needed */
+    cursor: pointer;
+  }
+
+  .navbar.expanded .nav-links {
+    display: flex;
+  }
+
+  .navbar.expanded .search-cart-profile {
+    display: none;
+  }
+
+  .navbar.expanded .search-cart-profile input {
+    width: 100%;
+  }
+
+  .navbar.expanded .hamburger-menu {
+    margin-right: 40px; /* Adjust margin as needed */
+  }
+
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+    text-align: right; /* Align dropdown menu to the right */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    right: 10; /* Adjust dropdown position to the right */
+  }
+
+  /*CHECKOUT SECTION */
+
+  .checkout-container {
+    flex-direction: column;
+    width: 90%; /* Reduced width for mobile view */
+  }
+
+  .checkout-left,
+  .checkout-right {
+    width: 100%; /* Full width for mobile view */
+    padding: 20px;
+    border-right: none;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item img {
+    width: 80%; /* Adjust image size for mobile view */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .item-details {
+    text-align: center;
+  }
+
+  .summary {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .summary h3 {
+    margin-top: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+
+  label {
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  input,
+  select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  select {
+    height: 45px; /* Adjust the height to match the input fields */
+  }
+
+  .pay-button {
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .pay-button:hover {
+    background-color: #4cae4c;
+  }
+}

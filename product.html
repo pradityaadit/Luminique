@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="image/logo1.jpg" />
+    <title>Product</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="nav">
+      <div class="logo"><a href="index.html">Luminique</a></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">New Arrival</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn"
+            >Catalog <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="#man">Men</a>
+            <a href="#girl">Women</a>
+            <a href="#catalog">Kids</a>
+          </div>
+        </li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+      <div class="search-cart-profile">
+        <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="login.html"><i class="fas fa-user-circle"></i></a>
+      </div>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- PRODUCT CARDS MAN-->
+
+    <div class="title" id="man">
+      <h1>Men</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="/image/f1.png" alt="Product Image" />
+        <h3>Blue hawaii Shirt</h3>
+        <p class="price">IDR 99.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/f2.png" alt="Product Image" />
+        <h3>Green hawaii Shirt</h3>
+        <p class="price">IDR 99.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/f3.png" alt="Product Image" />
+        <h3>Creem hawaii Shirt</h3>
+        <p class="price">IDR 99.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/f4.png" alt="Product Image" />
+        <h3>Korduroi patchwork</h3>
+        <p class="price">IDR 79.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/jacket-1.jpg" alt="Product Image" />
+        <h3>Cream Flanel Vintage</h3>
+        <p class="price">IDR 199.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/jacket-2.jpg" alt="Product Image" />
+        <h3>Brown Flanel Vintage</h3>
+        <p class="price">IDR 199.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/jacket-3.jpg" alt="Product Image" />
+        <h3>Grey Flanel Vintage</h3>
+        <p class="price">IDR 199.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/jacket4.png" alt="Product Image" />
+        <h3>Sidney Varsity Jacket</h3>
+        <p class="price">IDR 99.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card structure for other products -->
+    </div>
+
+    <!-- PRODUCT CARDS GIRL-->
+
+    <div class="title" id="girl">
+      <h1>Women</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="/image/girl1.png" alt="Product Image" />
+        <h3>Red Parasut Jacket</h3>
+        <p class="price">IDR 99.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/girl2.png" alt="Product Image" />
+        <h3>Pink Parasut Jacket</h3>
+        <p class="price">IDR 99.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/jacket-5.jpg" alt="Product Image" />
+        <h3>Leather Girl Coat</h3>
+        <p class="price">IDR 199.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/coat.png" alt="Product Image" />
+        <h3>Brown Girl Coat</h3>
+        <p class="price">IDR 199.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/f8.png" alt="Product Image" />
+        <h3>T-Shirt Round Neck</h3>
+        <p class="price">IDR 49.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/f7.png" alt="Product Image" />
+        <h3>Harem Flower Pants</h3>
+        <p class="price">IDR 49.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/clothes-3.png" alt="Product Image" />
+        <h3>A-Line Skirt</h3>
+        <p class="price">IDR 89.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/image/clothes-4.png" alt="Product Image" />
+        <h3>Casual Black Skirt</h3>
+        <p class="price">IDR 89.000</p>
+        <p class="brand">Brand: Luminique</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="check-out">
+          <div class="quantity">
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity(this)">-</button>
+              <span class="quantity-value">0</span>
+              <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <div class="add-to-cart">
+              <button>
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card structure for other products -->
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Luminique</h3>
+          <p class="footer-links">
+            <a href="index.html">Home</a><span>| </span>
+            <a href="index.html">About</a><span>| </span>
+            <a href="index.html">New Arrival</a><span>| </span>
+            <a href="#">Catalog</a><span>| </span>
+            <a href="index.html">Contact</a>
+          </p>
+          <p class="footer-company-name">
+            Copyright &copy; 2022 - All Rights Reserved
+          </p>
+        </div>
+        <div class="footer-center">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span>123 Street Name</span> City, Country</p>
+          </div>
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            <p>+1 234 567 890</p>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <p class="gmail">
+              <a href="#">Luminique@Gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            Luminique is a luxury fashion brand offering the latest trends in
+            men's, women's, and kids' clothing. Our mission is to provide
+            high-quality and stylish apparel for everyone.
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function increaseQuantity(button) {
+        const quantityElement =
+          button.parentNode.querySelector(".quantity-value");
+        let quantity = parseInt(quantityElement.textContent);
+        quantity++;
+        quantityElement.textContent = quantity;
+      }
+
+      function decreaseQuantity(button) {
+        const quantityElement =
+          button.parentNode.querySelector(".quantity-value");
+        let quantity = parseInt(quantityElement.textContent);
+        if (quantity > 0) {
+          quantity--;
+          quantityElement.textContent = quantity;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navbar = document.querySelector(".navbar");
+
+        hamburgerMenu.addEventListener("click", function () {
+          navbar.classList.toggle("expanded");
+        });
+
+        const sizeButtons = document.querySelectorAll(".sizes button");
+
+        sizeButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const isActive = button.classList.contains("active");
+            const buttons = button.parentNode.querySelectorAll("button");
+
+            if (isActive) {
+              button.classList.remove("active");
+            } else {
+              buttons.forEach((btn) => btn.classList.remove("active"));
+              button.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

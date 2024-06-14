@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminique</title>
+    <link rel="icon" type="image/x-icon" href="image/logo1.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="nav">
+      <div class="logo"><a href="index.html">Luminique</a></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#new-arrival">New Arrival</a></li>
+        <li class="dropdown">
+          <a href="#catalog" class="dropbtn"
+            >Catalog <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="product.html">Men</a>
+            <a href="product.html">Women</a>
+            <a href="product.html">Kids</a>
+          </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="search-cart-profile">
+        <a href="product.html"><i class="fas fa-shopping-cart"></i></a>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="login.html"><i class="fas fa-user-circle"></i></a>
+      </div>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+
+    <div class="home" id="home">
+      <div class="overlay"></div>
+      <div class="text-container">
+        <div class="left">
+          <h1>
+            Discover <br /><span>our curated</span> <br />collection Style
+          </h1>
+        </div>
+        <div class="right">
+          <p>Find out our best collection of women's and men's fashion.</p>
+          <div class="buttons">
+            <button class="btn discover">Discover</button>
+            <a href="login.html"
+              ><button class="btn vouchers">Get Vouchers</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+      <div class="about-container">
+        <div class="about-image animated">
+          <img src="/image/about.jpg" alt="About Image" />
+        </div>
+        <div class="about-text animated">
+          <h2>Mengapa Anda harus <br />segera berbelanja di toko kami?</h2>
+          <p>
+            Setiap bagiannya merupakan perayaan keanggunan abadi dan kontemporer
+            tren, memastikan lemari pakaian Anda memiliki cita rasa yang halus.
+            Mengangkat gaya Anda dengan potongan-potongan yang berbicara kepada
+            penikmat dalam diri Anda.
+          </p>
+        </div>
+      </div>
+      <div class="about-features">
+        <div class="feature animated">
+          <i class="fas fa-gem"></i>
+          <h3>Koleksi Indah untuk Setiap Selera</h3>
+          <p>
+            Setiap bagiannya merupakan bukti keanggunan abadi dan kontemporer
+            tren, memastikan pakaian Anda mencerminkan kecerdasan Anda
+            mencicipi.
+          </p>
+        </div>
+        <div class="feature animated">
+          <i class="fas fa-laptop"></i>
+          <h3>Antarmuka Intuitif untuk Belanja Mudah</h3>
+          <p>
+            Navigasi yang mulus dan fitur intuitif menjamin kemudahan pengalaman
+            berbelanja, memungkinkan Anda fokus pada hal yang paling penting.
+          </p>
+        </div>
+        <div class="feature animated">
+          <i class="fas fa-cogs"></i>
+          <h3>Dibuat dengan Bahan Unggul</h3>
+          <p>
+            Pakaian kami lebih dari sekedar fashion; mereka adalah manifestasi
+            dari kualitas tanpa kompromi untuk meningkatkan setiap momen Anda.
+          </p>
+        </div>
+        <div class="feature animated">
+          <i class="fas fa-truck"></i>
+          <h3>Pengiriman Cepat dan Dapat Diandalkan</h3>
+          <p>
+            Rasakan sensasi tiba tepat waktu. Pengiriman kami yang efisien
+            sistem memastikan temuan mode terbaru Anda tiba tepat di tangan Anda
+            ambang pintu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Arrival Section -->
+    <div class="new-arrival" id="new-arrival">
+      <h2>NEW ARRIVAL</h2>
+      <div class="new-arrival-container">
+        <div class="arrival-card">
+          <div class="image-container">
+            <img src="/image/arrv1.png" alt="New Arrival 1" />
+            <span class="icon-love"><i class="fa-regular fa-heart"></i></span>
+          </div>
+          <div class="card-info">
+            <h3>Stylish Sporty Shoes</h3>
+            <p>Brand : Luminique.</p>
+            <div class="price-arrival">
+              <p class="price">Rp.199.000</p>
+              <button class="add-to-cart">
+                Add to Cart<i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrival-card">
+          <div class="image-container">
+            <img src="/image/arrv2.png" alt="New Arrival 2" />
+            <span class="icon-love"><i class="fa-regular fa-heart"></i></span>
+          </div>
+          <div class="card-info">
+            <h3>Stylish Woman bag</h3>
+            <p>Brand : Luminique.</p>
+            <div class="price-arrival">
+              <p class="price">Rp.150.000</p>
+              <button class="add-to-cart">
+                Add to Cart<i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrival-card">
+          <div class="image-container">
+            <img src="/image/arrv3.png" alt="New Arrival 2" />
+            <span class="icon-love"><i class="fa-regular fa-heart"></i></span>
+          </div>
+          <div class="card-info">
+            <h3>Varsity Jacket</h3>
+            <p>Brand : Luminique.</p>
+            <div class="price-arrival">
+              <p class="price">Rp.99.000</p>
+              <button class="add-to-cart">
+                Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrival-card">
+          <div class="image-container">
+            <img src="/image/arrv4.png" alt="New Arrival 3" />
+            <span class="icon-love"><i class="fa-regular fa-heart"></i></span>
+          </div>
+          <div class="card-info">
+            <h3>Casual Hoodie</h3>
+            <p>Brand : Luminique.</p>
+            <div class="price-arrival">
+              <p class="price">Rp.100.000</p>
+              <button class="add-to-cart">
+                Add to Cart<i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promotion -->
+    <div class="promotion">
+      <h4>Holiday Flash Sale</h4>
+      <h2>Best Deal <span>60% Off</span> T-shirt & Bag</h2>
+      <a href="#catalog"><button>Shop Now</button></a>
+    </div>
+
+    <!-- Catalog Section -->
+    <div class="catalog" id="catalog">
+      <h1>BEST DEAL</h1>
+      <div class="catalog-judul">
+        <h2>
+          Exclusive <br />
+          <span class="judul1">Holiday</span> Deals
+        </h2>
+        <p>
+          Buka kebahagiaan dengan koleksi perayaan kami. Penawaran waktu
+          terbatas aktif item yang dipilih. Buruan, belanja sekarang dan jadikan
+          musim ini berkesan!
+        </p>
+        <button class="shop-now">
+          <a href="product.html"
+            >Lainnya... <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </button>
+      </div>
+
+      <div class="catalog-container">
+        <div class="catalog-item">
+          <div class="image-container">
+            <img src="/image/tas.png" alt="white backpack" />
+            <div class="discount">60% Off</div>
+          </div>
+          <div class="details">
+            <h3>Stylish White Backpack</h3>
+            <p>Elegant and durable white backpack</p>
+            <span class="price"> <del> Rp.299.000</del> To Rp.119.600</span>
+            <button class="detail-button">
+              Add to cart <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-container">
+            <img src="/image/kaos.png" alt="black t-shirt" />
+            <div class="discount">60% Off</div>
+          </div>
+          <div class="details">
+            <h3>Simple Black T-Shirt</h3>
+            <p>Soft and comfortable, for casual wear</p>
+            <span class="price"><del>Rp.99.000</del> To Rp.39.600</span>
+            <button class="detail-button">
+              Add to cart <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-container">
+            <img src="/image/tascewe.png" alt="Sling Bag" />
+            <div class="discount">60% Off</div>
+          </div>
+          <div class="details">
+            <h3>Stylish Sling Bag</h3>
+            <p>Elegant and versatile, for any occasion</p>
+            <span class="price"><del>Rp.199.000</del> To Rp.79.600</span>
+            <button class="detail-button">
+              Add to cart <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <div class="image-container">
+            <img src="/image/kaos2.png" alt="Casual T-Shirt" />
+            <div class="discount">60% Off</div>
+          </div>
+          <div class="details">
+            <h3>Casual T-Shirt</h3>
+            <p>Soft and comfortable, for casual wear</p>
+            <span class="price"><del>Rp.99.000</del> To Rp.39.600</span>
+            <button class="detail-button">
+              Add to cart <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial" id="testi">
+      <h2>Testimonials</h2>
+      <div class="testimonial-container">
+        <button class="carousel-btn left-btn" onclick="prevSlide()">
+          &#10094;
+        </button>
+        <div class="testimonial-card" id="testimonial-card">
+          <div class="card-content">
+            <p>
+              "The product quality is excellent and the service was outstanding.
+              Highly recommend!"
+            </p>
+            <div class="testimonial-footer">
+              <img src="/image/testi.png" alt="Person 1" />
+              <h3>John Doe</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <p>
+              "A great shopping experience with fantastic customer support."
+            </p>
+            <div class="testimonial-footer">
+              <img src="/image/testi.png" alt="Person 2" />
+              <h3>Jane Smith</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <p>
+              "Fast delivery and excellent customer service. I'll definitely be
+              shopping here again."
+            </p>
+            <div class="testimonial-footer">
+              <img src="/image/testi.png" alt="Person 2" />
+              <h3>Emily Johnson</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
+        <button class="carousel-btn right-btn" onclick="nextSlide()">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1807870542784!2d103.61235307396055!3d-1.6416137983431212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2586165b87bbd1%3A0xb3a3910b96232ea8!2sUNAMA%20(Kampus%20Kotabaru)!5e0!3m2!1sid!2sid!4v1717861780796!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Luminique</h3>
+          <p class="footer-links">
+            <a href="#home">Home</a><span>| </span> <a href="#about">About</a
+            ><span>| </span> <a href="#new-arrival">New Arrival</a
+            ><span>| </span> <a href="#catalog">Catalog</a><span>| </span>
+            <a href="#contact">Contact</a>
+          </p>
+          <p class="footer-company-name">
+            Copyright &copy; 2022 - All Rights Reserved
+          </p>
+        </div>
+        <div class="footer-center">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span>123 Street Name</span> City, Country</p>
+          </div>
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            <p>+1 234 567 890</p>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <p class="gmail">
+              <a href="#">Luminique@Gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            Luminique is a luxury fashion brand offering the latest trends in
+            men's, women's, and kids' clothing. Our mission is to provide
+            high-quality and stylish apparel for everyone.
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
